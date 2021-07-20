@@ -9,7 +9,7 @@ import unittest
 
 class Test(unittest.TestCase):
     def test_JandJ(self):
-        correct = Image.open('./solutions/JandJ_solution.png')
+        correct = Image.open('./images/jj_earnings_example.png')
         student = Image.open('./images/jj_earnings.png')
         correct_arr = np.asarray(correct)
         student_arr = np.asarray(student)
@@ -17,7 +17,7 @@ class Test(unittest.TestCase):
         self.assertTrue(rms_value <= 10)
 
     def test_BNV(self):
-        correct = Image.open('./solutions/BVN_solution.png')
+        correct = Image.open('./images/bnp_example.png')
         student = Image.open('./images/bivariate_normal_plot.png')
         correct_arr = np.asarray(correct)
         student_arr = np.asarray(student)
@@ -25,7 +25,7 @@ class Test(unittest.TestCase):
         self.assertTrue(rms_value <= 10)
 
     def test_ABV(self):
-        correct = Image.open('./solutions/faceting_solution.png')
+        correct = Image.open('./images/abv_example.png')
         student = Image.open('./images/ABV_histograms.png')
         correct_arr = np.asarray(correct)
         student_arr = np.asarray(student)
@@ -33,7 +33,7 @@ class Test(unittest.TestCase):
         self.assertTrue(rms_value <= 10)
 
     def test_ABV(self):
-        correct = Image.open('./solutions/subplots_solution.png')
+        correct = Image.open('./images/ndw_example.png')
         student = Image.open('./images/normally_distributed_wave.png')
         correct_arr = np.asarray(correct)
         student_arr = np.asarray(student)
